@@ -1,11 +1,9 @@
-/* General Styles */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Header */
 header {
     display: flex;
     flex-direction: row; /* Ensure items are in a row */
@@ -20,7 +18,6 @@ header {
     z-index: 1000;
 }
 
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -30,7 +27,6 @@ header {
     height: 40px; /* Adjust for smaller screens */
 }
 
-/* Navbar */
 nav {
     flex-grow: 1;
     display: flex;
@@ -74,7 +70,6 @@ nav ul li a {
     }
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     flex-direction: column; /* Default for mobile */
@@ -86,14 +81,12 @@ nav ul li a {
     text-align: left; /* Align text to the left */
 }
 
-/* Hero Text */
 .hero-text {
     width: 100%;
     text-align: left; /* Align text to left */
     margin-bottom: 20px;
 }
 
-/* Hero Text Heading */
 .hero-text h1 {
     font-size: 30px;
     color: #333;
@@ -101,7 +94,6 @@ nav ul li a {
     line-height: 1.2;
 }
 
-/* Hero Image */
 .hero-image {
     width: 100%;
     display: flex;
@@ -114,7 +106,6 @@ nav ul li a {
     height: auto;
 }
 
-/* Responsive - Desktop View */
 @media (min-width: 768px) {
     .hero {
         flex-direction: row; /* Side-by-side layout for larger screens */
@@ -142,7 +133,6 @@ nav ul li a {
         max-width: 500px;
     }
 }   
-/* About Section Card */
 .about-card {
     display: flex;
     align-items: center;
@@ -155,7 +145,6 @@ nav ul li a {
     gap: 20px;
 }
 
-/* Left Side - Image Grid */
 .about-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two images on top */
@@ -172,14 +161,12 @@ nav ul li a {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Make third image span full width */
 .about-images img:nth-child(3) {
     grid-column: span 2;
     max-width: 380px;
     justify-self: center;
 }
 
-/* Right Side - About Text */
 .about-text {
     flex: 1;
     text-align: left;
@@ -198,7 +185,6 @@ nav ul li a {
     margin-bottom: 15px;
 }
 
-/* Read More Button */
 .about-text a {
     display: inline-block;
     padding: 8px 12px;
@@ -213,7 +199,6 @@ nav ul li a {
     background-color: #cc5200;
 }
 
-/* Responsive Design - Fix for Mobile */
 @media (max-width: 768px) {
     .about-card {
         flex-direction: column;
@@ -243,7 +228,6 @@ nav ul li a {
         text-align: center;
         width: 100%;
     }
-    /* Main Focus Section */
 .main-focus {
     text-align: center;
     padding: 50px 20px;
@@ -252,14 +236,12 @@ nav ul li a {
     margin: 0 auto;
 }
 
-/* Title Styling */
 .main-focus h2 {
     font-size: 26px;
     color: #333;
     margin-bottom: 30px;
 }
 
-/* Image Container */
 .focus-container {
     display: flex;
     justify-content: space-between;
@@ -267,7 +249,6 @@ nav ul li a {
     gap: 20px;
 }
 
-/* Image Styling */
 .focus-img {
     width: 45%; /* Adjust width */
     max-width: 300px; /* Optional: Limit max size */
@@ -275,7 +256,6 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .focus-container {
         flex-direction: column;
@@ -286,8 +266,7 @@ nav ul li a {
         width: 80%; /* Adjust size for smaller screens */
     }
 }
-/* Our Projects Section */
-/* Our Projects Section */
+
 .our-projects {
     text-align: center;
     padding: 50px 20px;
@@ -296,14 +275,12 @@ nav ul li a {
     margin: 0 auto;
 }
 
-/* Title Styling */
 .our-projects h2 {
     font-size: 28px;
     color: #333;
     margin-bottom: 30px;
 }
 
-/* Project Image Grid */
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Default: 3 images per row */
@@ -313,18 +290,15 @@ nav ul li a {
     margin: 0 auto;
 }
 
-/* Ensure only the last two items move to the second row */
 .projects-container .project-item:nth-child(4),
 .projects-container .project-item:nth-child(5) {
     grid-column: span 1; /* These images remain in the second row */
 }
 
-/* Project Items */
 .project-item {
     width: 100%;
 }
 
-/* Ensure images fill their grid areas */
 .project-item img {
     width: 100%;
     height: auto;
@@ -332,18 +306,15 @@ nav ul li a {
     transition: transform 0.3s ease;
 }
 
-/* Hover Effect */
 .project-item img:hover {
     transform: scale(1.05);
 }
 
-/* Mobile View (Ensures 3+2 Layout on Small Screens) */
 @media (max-width: 768px) {
     .projects-container {
         grid-template-columns: repeat(3, 1fr); /* Still 3 images per row */
     }
 
-    /* Force the last 2 images to align in a new row */
     .projects-container .project-item:nth-child(4),
     .projects-container .project-item:nth-child(5) {
         grid-column: span 1; /* Ensures 2nd row alignment */
@@ -365,12 +336,10 @@ nav ul li a {
     bottom: 20px; /* Adjust based on layout */
 }
 
-/* Hover Effect */
 .project-button:hover {
     background-color: #555; /* Slightly lighter grey */
 }
 
-/* Responsive Adjustment */
 @media (max-width: 768px) {
     .project-button {
         right: 10px; /* Adjust for smaller screens */
@@ -415,4 +384,5 @@ nav ul li a {
     border-radius:10px ;
 }
     
+
 }
